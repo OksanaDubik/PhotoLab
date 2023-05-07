@@ -1,10 +1,559 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PhotoLab</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
 </head>
 <body>
+<div class="wrapper">
+    <div class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="" class="logo">
+                    <img src="images/logo.svg" alt="logo">
+                </a>
+                <nav class="menu">
+                    <button class="menu__btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="menu__list">
+                        <li class="menu__list-link">
+                            <div class="drop-link">Business area</div>
+                            <div class="dropdown-content">
+                                <a href="#">Product Photography</a>
+                                <a href="#">Architecture Photography</a>
+                                <a href="#">Drone Photography</a>
+                                <a href="#">Wildlife Photography</a>
+                            </div>
+                        </li>
+                        <li class="menu__list-link">
+                            <div class="dropbtn">Featured images</div>
+                            <div class="dropdown-content">
+                                <a href="#">Product Photography</a>
+                                <a href="#">Architecture Photography</a>
+                                <a href="#">Drone Photography</a>
+                                <a href="#">Wildlife Photography</a>
+                                <a href="#">Costa Rica</a>
+                                <a href="#">Japan</a>
+                                <a href="#">Iceland</a>
+                            </div>
+                        </li>
+                        <li class="menu__list-link">
+                            <div class="dropbtn">Gear cage</div>
+                            <div class="dropdown-content">
+                                <a href="#">Cameras and systems</a>
+                                <a href="#">Digital backs</a>
+                                <a href="#">Lens</a>
+                                <a href="#">Accessories</a>
+                                <a href="#">Software</a>
+                                <a href="#">Aerial photography equipment</a>
+                            </div>
+                        </li>
+                        <li class="menu__list-link">
+                            <div class="dropbtn">Contact</div>
+                            <div class="dropdown-content">
+                                <a href="mailto:someone@example.com">Send email</a>
+                                <a href="tel:+74955555555">+7(495) 555-55-55</a>
+                                <a href="https://t.me/agvento1">Write to the author</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu__list-btn"><a href="./form.html">Get template</a></div>
+                        </li>
+                    </ul>
 
+                </nav>
+            </div>
+        </div>
+    </div>
+    <main class="main">
+        <section class="top">
+            <div class="container">
+                <div class="top__inner">
+                    <p class="text-title">Photographer &amp;&nbsp;Filmmaker</p>
+                    <h1 class="top__title">Aperture Studios</h1>
+                    <p class="text-short">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                        enim
+                        in&nbsp;eros elementum tristique. Duis cursus, mi&nbsp;quis viverra ornare, eros dolor interdum
+                        nulla, ut&nbsp;commodo diam libero vitae erat. Aenean faucibus nibh et&nbsp;justo cursus id&nbsp;rutrum
+                        lorem imperdiet. Nunc ut&nbsp;sem vitae risus tristique posuere.</p>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-link">
+                            <img src="images/menuList/watch.svg" alt="watch">
+                            <p class="nav__text">1/2000s</p>
+                        </li>
+                        <li class="nav-link">
+                            <img src="images/menuList/aperture.svg" alt="aperture">
+                            <p class="nav__text">f/11</p>
+                        </li>
+                        <li class="nav-link">
+                            <img src="images/menuList/ISOIcon.svg" alt="ISOIcon">
+                            <p class="nav__text">100</p>
+                        </li>
+                        <li class="nav-link">
+                            <img src="images/menuList/locationIcon.svg" alt="locationIcon">
+                            <p class="nav__text">Iceland</p>
+                        </li>
+                    </ul>
+                </nav>
+
+
+            </div>
+        </section>
+        <section class="cards">
+            <div class="container">
+                <h2>What we&nbsp;do.</h2>
+                <h4 class="cards__title">The areas that we&rsquo;re specialized&nbsp;in.</h4>
+                <div class="cards__block">
+                    <div class="cards__block-phone">
+                        <img class="cards__block-img" src="images/cards/phones.svg" alt="phones">
+                        <div class="cards__block-text">
+                            <p class="text-title">Product Photography</p>
+                            <p class="text-short">Cras commodo consequat orci, in&nbsp;convallis risus egestas non.
+                                Nulla
+                                efficitur auctor hendrerit. Etiam ut&nbsp;orci varius, faucibus libero&nbsp;ac, cursus
+                                quam.
+                                <span class="more" id="phones" hidden>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget,
+                                    auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
+                                    ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                                    Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
+                                    fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
+                            </p>
+
+                            <div class="cards__block-btn">
+                                <img src="images/circleBtn.svg" alt="circleBtn">
+                                <button type="button" data-toggle-id="phones">Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__block-home">
+                        <img class="cards__block-img" src="images/cards/home.svg" alt="home">
+                        <div class="cards__block-text">
+                            <p class="text-title">Architecture Photography</p>
+                            <p class="text-short">Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci
+                                nec
+                                egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce
+                                tincidunt
+                                aliquet sapien, sit amet rhoncus leo imperdiet nec.
+                                <span class="more" id="home" hidden>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget,
+                                    auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
+                                    ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                                    Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
+                                    fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                            <div class="cards__block-btn">
+                                <img src="images/circleBtn.svg" alt="circleBtn">
+                                <button type="button" data-toggle-id="home">Read more
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cards__block-wood">
+                        <img class="cards__block-img" src="images/cards/wood.svg" alt="wood">
+                        <div class="cards__block-text">
+                            <p class="text-title">Drone Photography</p>
+                            <p class="text-short">Mauris euismod elit et&nbsp;nisi ultrices, ut&nbsp;faucibus orci
+                                tincidunt. Duis tristique sed lorem a&nbsp;vestibulum. Cras commodo consequat orci, in&nbsp;convallis
+                                risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut&nbsp;orci varius, faucibus
+                                libero&nbsp;ac, cursus quam.
+                                <span class="more" id="wood" hidden>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget,
+                                    auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
+                                    ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                                    Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
+                                    fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                            <div class="cards__block-btn">
+                                <img src="images/circleBtn.svg" alt="circleBtn">
+                                <button type="button" data-toggle-id="wood">Read more</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="cards__block-deer">
+                        <img class="cards__block-img" src="images/cards/deer.svg" alt="deer">
+                        <div class="cards__block-text">
+                            <p class="text-title">Wildlife Photography</p>
+                            <p class="text-short">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                scelerisque aliquam odio et&nbsp;faucibus. Nulla rhoncus feugiat eros quis consectetur.
+                                Morbi neque&nbsp;ex, condimentum dapibus congue&nbsp;et, vulputate ut&nbsp;ligula.
+                                Vestibulum sit amet urna turpis.
+                                <span class="more" id="deer" hidden>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget,
+                                    auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
+                                    ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                                    Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
+                                    fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                            <div class="cards__block-btn">
+                                <img src="images/circleBtn.svg" alt="circleBtn">
+                                <button type="button" data-toggle-id="deer">Read more</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sliders1 sliders__header1">
+            <figure>
+                <div class="swiper swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"
+                             style="background-image: url(images/sliders1/japan.svg); height: 71vh; width: 100vw; background-repeat: no-repeat; background-size: cover;">
+                            <div class="swiper-figcaption">
+                                <p class="text-title">Sunset at Mount Fuji</p>
+                                <p class="text-short">Duis tristique sed lorem a&nbsp;vestibulum. Cras commodo consequat
+                                    orci, in&nbsp;convallis
+                                    risus egestas non.</p>
+                                <nav class="nav-swiper">
+                                    <ul class="nav-list">
+                                        <li class="nav-link">
+                                            <img src="images/menuList/watch.svg" alt="watch">
+                                            <p class="nav__text">1&rsquo;&rsquo;</p>
+                                        </li>
+                                        <li class="nav-link">
+                                            <img src="images/menuList/aperture.svg" alt="aperture">
+                                            <p class="nav__text">f/16</p>
+                                        </li>
+                                        <li class="nav-link">
+                                            <img src="images/menuList/ISOIcon.svg" alt="ISOIcon">
+                                            <p class="nav__text">400</p>
+                                        </li>
+                                        <li class="nav-link">
+                                            <img src="images/menuList/locationIcon.svg" alt="locationIcon">
+                                            <p class="nav__text">Japan</p>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             style="background-image: url(images/sliders2/costaRica.svg); height: 71vh; background-repeat: no-repeat; background-size: cover;">
+                            <div class="swiper-figcaption">
+                                <p class="text-title">Monstera Leafs</p>
+                                <p class="text-short">Vestibulum sit amet urna turpis. Mauris euismod elit et nisi
+                                    ultrices, ut faucibus orci tincidunt.</p>
+                                <nav class="nav-swiper">
+                                    <ul class="nav-list">
+                                        <li class="nav-link">
+                                            <img src="images/menuList/watch.svg" alt="watch">
+                                            <p class="nav__text">0,8&rsquo;&rsquo;</p>
+                                        </li>
+                                        <li class="nav-link">
+                                            <img src="images/menuList/aperture.svg" alt="aperture">
+                                            <p class="nav__text">f/5,6</p>
+                                        </li>
+                                        <li class="nav-link">
+                                            <img src="images/menuList/ISOIcon.svg" alt="ISOIcon">
+                                            <p class="nav__text">100</p>
+                                        </li>
+                                        <li class="nav-link">
+                                            <img src="images/menuList/locationIcon.svg" alt="locationIcon">
+                                            <p class="nav__text">Sweden</p>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             style="background-image: url(images/sliders3/nepal.svg); height: 71vh; background-repeat: no-repeat; background-size: cover;">
+                            <div class="swiper-figcaption">
+                                <p class="text-title">Star fall in&nbsp;the Himalayas</p>
+                                <p class="text-short">Nulla rhoncus feugiat eros quis consectetur. Morbi neque&nbsp;ex,
+                                    condimentum
+                                    dapibus congue&nbsp;et, vulputate ut&nbsp;ligula.</p>
+                                <nav class="nav-swiper">
+                                    <ul class="nav-list">
+                                        <li class="nav-link">
+                                            <img src="images/menuList/watch.svg" alt="watch">
+                                            <p class="nav__text">6&rsquo;&rsquo;</p>
+                                        </li>
+                                        <li class="nav-link">
+                                            <img src="images/menuList/aperture.svg" alt="aperture">
+                                            <p class="nav__text">f/11</p>
+                                        </li>
+                                        <li class="nav-link">
+                                            <img src="images/menuList/ISOIcon.svg" alt="ISOIcon">
+                                            <p class="nav__text">800</p>
+                                        </li>
+                                        <li class="nav-link">
+                                            <img src="images/menuList/locationIcon.svg" alt="locationIcon">
+                                            <p class="nav__text">Nepal</p>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </figure>
+            <div class="sliders__story">
+                <div class="sliders__story-text">
+                    <p class="text-title">The Gear cage</p>
+                    <h3>The tools that we&nbsp;use.</h3>
+                    <p class="text-short">The say that &laquo;no&nbsp;place is&nbsp;boring if&nbsp;you&rsquo;ve had a&nbsp;good
+                        night&rsquo;s sleep and have a&nbsp;pocket full of&nbsp;unexposed film&raquo;. While we&nbsp;don&rsquo;t
+                        shoot (a&nbsp;lot) of&nbsp;film these days&nbsp;&mdash; these are the tools that we&nbsp;actually
+                        use everyday to&nbsp;capture the amazing things around&nbsp;us.</p>
+                    <div class="cards__block-btn" ><a href="checkOut.html"><img
+                            src="images/circleBtn.svg" alt="circleBtn">Check it&nbsp;out</a>
+                    </div>
+
+                </div>
+                <div class="sliders__story-img">
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li class="nav-link">
+                                <img src="images/menuList/watch.svg" alt="watch">
+                                <p class="nav__text">0,8&rsquo;&rsquo;</p>
+                            </li>
+                            <li class="nav-link">
+                                <img src="images/menuList/aperture.svg" alt="aperture">
+                                <p class="nav__text">f/5,6</p>
+                            </li>
+                            <li class="nav-link">
+                                <img src="images/menuList/ISOIcon.svg" alt="ISOIcon">
+                                <p class="nav__text">100</p>
+                            </li>
+                            <li class="nav-link">
+                                <img src="images/menuList/locationIcon.svg" alt="locationIcon">
+                                <p class="nav__text">Sweden</p>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section class="sliders2 sliders">
+            <figure>
+                <div class="swiper swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"
+                             style="background-image: url(images/sliders1/japan.svg); height: 71vh; width: 100vw; background-repeat: no-repeat; background-size: cover;">
+                            <div class="swiper-figcaption">
+                                <p class="text-title">Sunset at Mount Fuji</p>
+                                <p class="text-short">Duis tristique sed lorem a&nbsp;vestibulum. Cras commodo consequat
+                                    orci, in&nbsp;convallis
+                                    risus egestas non.</p>
+                                <nav class="nav-swiper">
+                                    <ul class="nav-list">
+                                        <li class="nav-link">
+                                            <img src="images/menuList/watch.svg" alt="watch">
+                                            <p class="nav__text">1&rsquo;&rsquo;</p>
+                                        </li>
+                                        <li class="nav-link">
+                                            <img src="images/menuList/aperture.svg" alt="aperture">
+                                            <p class="nav__text">f/16</p>
+                                        </li>
+                                        <li class="nav-link">
+                                            <img src="images/menuList/ISOIcon.svg" alt="ISOIcon">
+                                            <p class="nav__text">400</p>
+                                        </li>
+                                        <li class="nav-link">
+                                            <img src="images/menuList/locationIcon.svg" alt="locationIcon">
+                                            <p class="nav__text">Japan</p>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             style="background-image: url(images/sliders2/costaRica.svg); height: 71vh; background-repeat: no-repeat; background-size: cover;">
+                            <div class="swiper-figcaption">
+                                <p class="text-title">Monstera Leafs</p>
+                                <p class="text-short">Vestibulum sit amet urna turpis. Mauris euismod elit et nisi
+                                    ultrices, ut faucibus orci tincidunt.</p>
+                                <nav class="nav-swiper">
+                                    <ul class="nav-list">
+                                        <li class="nav-link">
+                                            <img src="images/menuList/watch.svg" alt="watch">
+                                            <p class="nav__text">0,8&rsquo;&rsquo;</p>
+                                        </li>
+                                        <li class="nav-link">
+                                            <img src="images/menuList/aperture.svg" alt="aperture">
+                                            <p class="nav__text">f/5,6</p>
+                                        </li>
+                                        <li class="nav-link">
+                                            <img src="images/menuList/ISOIcon.svg" alt="ISOIcon">
+                                            <p class="nav__text">100</p>
+                                        </li>
+                                        <li class="nav-link">
+                                            <img src="images/menuList/locationIcon.svg" alt="locationIcon">
+                                            <p class="nav__text">Sweden</p>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             style="background-image: url(images/sliders3/nepal.svg); height: 71vh; background-repeat: no-repeat; background-size: cover;">
+                            <div class="swiper-figcaption">
+                                <p class="text-title">Star fall in&nbsp;the Himalayas</p>
+                                <p class="text-short">Nulla rhoncus feugiat eros quis consectetur. Morbi neque&nbsp;ex,
+                                    condimentum
+                                    dapibus congue&nbsp;et, vulputate ut&nbsp;ligula.</p>
+                                <nav class="nav-swiper">
+                                    <ul class="nav-list">
+                                        <li class="nav-link">
+                                            <img src="images/menuList/watch.svg" alt="watch">
+                                            <p class="nav__text">6&rsquo;&rsquo;</p>
+                                        </li>
+                                        <li class="nav-link">
+                                            <img src="images/menuList/aperture.svg" alt="aperture">
+                                            <p class="nav__text">f/11</p>
+                                        </li>
+                                        <li class="nav-link">
+                                            <img src="images/menuList/ISOIcon.svg" alt="ISOIcon">
+                                            <p class="nav__text">800</p>
+                                        </li>
+                                        <li class="nav-link">
+                                            <img src="images/menuList/locationIcon.svg" alt="locationIcon">
+                                            <p class="nav__text">Nepal</p>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </figure>
+            <div class="sliders__customers">
+                <h2>Past clients</h2>
+                <h4>Trusted by&nbsp;your favourite companies</h4>
+                <div class="sliders__customers-img">
+                    <img src="images/sliders2/hillHayes.svg" alt="hillHayes" class="sliders__customers-img">
+                    <img src="images/sliders2/riksgransen.svg" alt="riksgransen" class="sliders__customers-img">
+                    <img src="images/sliders2/studioCai.svg" alt="studioCai" class="sliders__customers-img">
+                    <img src="images/sliders2/chillIdustries.svg" alt="chillIdustries" class="sliders__customers-img">
+                    <img src="images/sliders2/stockholm.svg" alt="stockholm" class="sliders__customers-img">
+                </div>
+            </div>
+        </section>
+        <section class="sliders3 sliders">
+            <figure>
+                <div class="sliders__slider"></div>
+                <figcaption>
+                    <p class="text-title">Star fall in&nbsp;the Himalayas</p>
+                    <p class="text-short">Nulla rhoncus feugiat eros quis consectetur. Morbi neque&nbsp;ex, condimentum
+                        dapibus congue&nbsp;et, vulputate ut&nbsp;ligula.</p>
+                </figcaption>
+
+                <div class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-link">
+                            <img src="images/menuList/watch.svg" alt="watch">
+                            <p class="nav__text">6&rsquo;&rsquo;</p>
+                        </li>
+                        <li class="nav-link">
+                            <img src="images/menuList/aperture.svg" alt="aperture">
+                            <p class="nav__text">f/11</p>
+                        </li>
+                        <li class="nav-link">
+                            <img src="images/menuList/ISOIcon.svg" alt="ISOIcon">
+                            <p class="nav__text">800</p>
+                        </li>
+                        <li class="nav-link">
+                            <img src="images/menuList/locationIcon.svg" alt="locationIcon">
+                            <p class="nav__text">Nepal</p>
+                        </li>
+                    </ul>
+                </div>
+            </figure>
+            <div class="sliders__promotion">
+                <h2>Need help with photography or&nbsp;videography?</h2>
+                <h4>We&rsquo;re here for you!</h4>
+                <div class="cards__block-btn" >
+                    <a href="form.html"><img src="images/circleBtn.svg" alt="circleBtn">
+                        Get in&nbsp;touch
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer___top">
+            <div class="container">
+                <div class="footer___top-block">
+                    <div class="footer__top-logo">
+                        <a href="#" class="logo"><img src="images/logo.svg" alt="logo"></a>
+                        <p class="text-short">Photographers &amp;&nbsp;videographers capturing the world
+                            around&nbsp;us.</p>
+                    </div>
+                    <div class="footer__top-links">
+                        <div class="footer__top-list">
+                            <p class="text-title">Business areas</p>
+                            <ul class="footer__top-links__list">
+                                <li class="footer__top-links__item"><p class="text-short">Product Photography</p></li>
+                                <li class="footer__top-links__item"><p class="text-short">Architecture Photography</p>
+                                </li>
+                                <li class="footer__top-links__item"><p class="text-short">Drone Photography</p></li>
+                                <li class="footer__top-links__item"><p class="text-short">Wildlife Photography</p></li>
+                                <li class="footer__top-links__item"><p class="text-short"></p></li>
+                                <li class="footer__top-links__item"><p class="text-short"></p></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__top-list">
+                            <p class="text-title">Pages</p>
+                            <ul class="footer__top-links__list">
+                                <li class="footer__top-links__item"><p class="text-short">Gear cage</p></li>
+                                <li class="footer__top-links__item"><p class="text-short">Featured images</p></li>
+                                <li class="footer__top-links__item"><p class="text-short">Contact</p></li>
+                                <li class="footer__top-links__item"><p class="text-short">Style guide</p></li>
+                                <li class="footer__top-links__item"><p class="text-short">Instructions</p></li>
+                                <li class="footer__top-links__item"><p class="text-short">Changelog</p></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="footer__input">
+                    <div class="footer__input-text">
+                        <p class="text-title">Subscribe to&nbsp;our newsletter</p>
+                        <p class="text-short">Read about all the things we&nbsp;do.</p>
+                    </div>
+                    <div class="footer__input-btn">
+                        <input type="text" id="footer-email" name="footer-email">
+                        <button type="submit" class="footer__btn">.</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer__social">
+                    <div class="footer__social-copyright">
+                        <p class="text-short">&copy;Aperture Photography, Inc. All rights reserved.Licensing</p>
+                    </div>
+                    <div class="footer__social-links">
+                        <ul class="footer__social-list">
+                            <li class="footer__social-item"><a href=""><img src="images/social/telegram.svg"
+                                                                            alt="telegram"></a></li>
+                            <li class="footer__social-item"><a href=""><img src="images/social/youtube.svg"
+                                                                            alt="youtube"></a></li>
+                            <li class="footer__social-item"><a href=""><img src="images/social/vk.svg" alt="vk"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="JavaScript/swipers.js"></script>
+<script src="JavaScript/main.js"></script>
 </body>
 </html>

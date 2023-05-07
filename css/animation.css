@@ -1,0 +1,78 @@
+@keyframes top {
+    0% {
+        scale: 1;
+    }
+    50% {
+
+        scale: 1.2;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+@keyframes cards__block-img {
+    0% {
+        background-position: 100% 0;
+        width: 99%;
+    }
+    10%{
+        background-position: 100% 0;
+        width: 97%;
+    }
+    100% {
+        background-position: 0 100%;
+        width: 100%;
+    }
+
+}
+
+@-webkit-keyframes cards__block-img {
+    0% {
+        background-position: 100% 0;
+        width: 99%;
+    }
+    10%{
+        background-position: 100% 0;
+        width: 97%;
+    }
+    100% {
+        background-position: 0 100%;
+        width: 100%;
+    }
+}
+
+@keyframes sliders {
+    0% {
+        transform: scale(1) translate(0, 0);
+        transform-origin: 16% 50%
+    }
+    100% {
+        transform: scale(1.25) translate(-20px, 15px);
+        transform-origin: left
+    }
+
+}
+
+@-webkit-keyframes sliders {
+    0% {
+        transform: scale(1) translate(0, 0);
+        transform-origin: 16% 50%
+    }
+    100% {
+        transform: scale(1.25) translate(-20px, 15px);
+        transform-origin: left
+    }
+}
+
+@keyframes button {
+    0% {
+        margin-top:0 ;
+        box-shadow: 0 0 0 0 transparent
+    }
+    100% {
+        margin-top:2px;
+        box-shadow: 9px 10px 7px -4px rgb(135 133 133);
+
+    }
+}
