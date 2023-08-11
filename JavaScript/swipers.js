@@ -5,6 +5,7 @@ let swiper = new Swiper(".swiper1", {
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
+        autoplaySpeed: 5000,
     }
 });
 let swiper2 = new Swiper(".swiper2", {

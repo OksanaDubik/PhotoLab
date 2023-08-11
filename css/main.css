@@ -73,24 +73,21 @@ button {
     color: #000;
 }
 
+.menu__list-btn,
+.menu__list button,
+.closebtn,
+.checkOut__btn-top {
+    box-shadow: 4px 4px 4px 0 rgba(83, 85, 87, 1);
+}
+
+
+.cards__block-btn:active,
 .menu__list-btn:active,
 .menu__list button:active,
-.cards__block-btn:active,
 .closebtn:active,
 .checkOut__btn-top:active {
-    animation: button 0s cubic-bezier(.25, .46, .45, .94) both;
-
+    box-shadow: 3px 3px 3px 0 rgba(83, 85, 87, 1) inset;
 }
-
-.menu__list-btn:hover,
-.menu__list button:hover,
-.cards__block-btn button:hover,
-.cards__block-btn a:hover,
-.closebtn:hover,
-.checkOut__btn-top:hover {
-    text-shadow: 1px 1px 2px black, 0 0 1em #665;
-}
-
 
 .container {
     width: 83%;
@@ -132,17 +129,16 @@ button {
     padding: 7px 20px 8px;
     border-radius: 14px;
 }
-.menu__list-btn{
+
+.menu__list-btn {
     font-size: 16px;
     line-height: 28px;
     letter-spacing: 0.4px;
     color: #000;
 }
 
-
 .menu__list-linc {
     color: #000000;
-
 }
 
 .top {
@@ -215,7 +211,8 @@ button {
 .cards__block-deer,
 .sliders__story-img,
 .sliders3 > figure {
-    transition: all 0s linear 2s;
+    transition: all 5s linear 2s;
+
 }
 
 .cards__block-phone,
@@ -242,13 +239,14 @@ button {
     bottom: 10px;
 }
 
-
 .cards__block-btn {
+    width: 170px;
     background: #FFFFFF;
     padding: 5px 10px 4px;
     border-radius: 14px;
     display: inline-flex;
     align-items: center;
+    box-shadow: 4px 4px 4px 0 rgba(83, 85, 87, 1);
 }
 
 .cards__block-btn a {
@@ -521,6 +519,7 @@ hr {
 }
 
 .container__pages {
+    height: 95vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -549,17 +548,19 @@ hr {
 .closebtn {
     right: 30px;
     font-size: 35px;
-    padding: 0 82px;
+    padding: 0 50px;
     top: 62px;
     line-height: 45px;
+    opacity: 0.7;
 }
 
 .checkOut__btn-top {
-    right: 27px;
+    right: 30px;
     font-size: 18px;
-    padding: 9px 78px;
+    padding: 9px 45px;
     top: 133px;
     font-weight: 700;
+    opacity: 0.7;
 }
 
 /*FORM*/
