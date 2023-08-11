@@ -143,7 +143,7 @@ button {
 
 .top {
     height: 70.85vh;
-    background: url("../images/headerBackground.svg") no-repeat;
+    background: url("../images/headerBackground.jpg") no-repeat;
     background-size: cover;
     inset: 0;
     margin-bottom: 112px;
@@ -309,7 +309,7 @@ button {
 }
 
 .sliders__story-img {
-    background-image: url('../images/sliders1/cameras.svg');
+    background-image: url('../images/sliders11/cameras.jpg');
     background-size: cover;
 }
 
@@ -341,7 +341,7 @@ button {
 }
 
 .sliders3 > figure {
-    background-image: url("../images/sliders3/nepal.svg");
+    background-image: url("../images/sliders31/nepal.jpg");
     background-size: cover;
     left: 0;
     right: 0;
