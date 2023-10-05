@@ -339,13 +339,15 @@ button {
     display: flex;
     justify-content: space-around;
 }
-
+.sliders3{
+    margin-top: 20vh;
+}
 .sliders3 > figure {
     background-image: url("../images/sliders31/nepal.jpg");
     background-size: cover;
     left: 0;
     right: 0;
-    height: 61vh;
+    height: 75vh;
 }
 
 .sliders3 figcaption {

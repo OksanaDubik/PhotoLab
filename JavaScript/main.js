@@ -18,8 +18,6 @@ findCard.addEventListener('click', function (event) {
         event.target.textContent = "Read more"
     }
 })
-
-
 //footer email
 function ValidateFooterEmail() {
     let footerBtnEmail = document.querySelector('.footer__btn');
