@@ -690,6 +690,9 @@ label {
 }
 
 @media (max-width: 993px) {
+  main{
+      margin-top: 10vh;
+  }
     .menu__btn {
         display: flex;
     }
@@ -697,6 +700,9 @@ label {
     .menu__btn, .logo {
         position: relative;
         z-index: 10;
+    }
+    .top {
+        height: 79vh;
     }
 
     .menu__list {
@@ -707,7 +713,7 @@ label {
         top: 0;
         left: 0;
         padding: 30px;
-        height: 25vh;
+        height: 46vh;
         right: 0;
         bottom: 0;
         align-items: flex-end;
@@ -792,13 +798,13 @@ label {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .text-short,
-    .cards__block-btn {
+   .top__inner > .text-short
+     {
         display: none;
     }
 
     .top__inner {
-        padding-top: 52vh;
+        padding-top: 40vh;
     }
 
     .nav {
@@ -901,6 +907,9 @@ label {
     .footer__top-links {
         display: flex;
         justify-content: space-around;
+    }
+    .container__pages {
+        height: 71vh;
     }
 
 }

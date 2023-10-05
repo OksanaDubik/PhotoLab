@@ -4,17 +4,19 @@
  */
 //открываем текст карточки товара
 let findCard = document.querySelector('.cards__block');
+let cardBlockChild = document.querySelector(".cards__block-child");
+
 findCard.addEventListener('click', function (event) {
     let id = event.target.dataset.toggleId;
-    if (!id) return;
+    if (!id || cardBlockChild.clientWidth<400) return;
     let elem = document.getElementById(id);
 
     //меняем текст кнопки
     elem.hidden = !elem.hidden;
     if (!elem.hidden) {
-        console.dir(event.target)
-        event.target.textContent = "Shorten"
-    } else {
+            event.target.textContent = "Shorten"
+    }
+    else {
         event.target.textContent = "Read more"
     }
 })
