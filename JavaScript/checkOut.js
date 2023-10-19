@@ -18,7 +18,6 @@ function myFunction(imgs) {
         checkOutBtnTop.style.display = 'block';
         document.querySelector('.closebtn').style.display = 'block';
     }
-
 }
 
 checkOutBtnTop.addEventListener('click', topFunction)
